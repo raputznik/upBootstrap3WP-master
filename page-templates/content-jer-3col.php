@@ -15,7 +15,6 @@ get_header(); ?>
 				
 				<?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
 				<header class="entry-header page-header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
 				</header><!-- .entry-header -->
 				
 				<div class="entry-content">
