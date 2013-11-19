@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
 /*!
  * Bootstrap v3.0.0
  *
@@ -258,7 +259,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #ffffff;
@@ -393,7 +394,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -3477,7 +3478,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   position: relative;
   z-index: 1000;
   min-height: 22px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 .navbar:before,
@@ -6012,12 +6012,25 @@ fieldset[disabled] #submit.active {
 }
 body {
   background-color: #273b4b !important;
-  padding-top: -170px;
+}
+h1 {
+  font-weight: bold;
+}
+h2 {
+  font-size: 24px;
+  margin-top: 0;
 }
 .myheader {
   background-color: #273b4b;
   height: 178px;
+  padding-top: 60px;
 }
 #main-menu {
   color: #fff;
+}
+.entry-content {
+  margin-top: -50px;
+}
+.bottom-stuff {
+  position: relative;
 }

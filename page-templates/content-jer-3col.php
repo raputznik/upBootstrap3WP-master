@@ -12,11 +12,11 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				
 				<?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
-				<header class="entry-header page-header">
-				</header><!-- .entry-header -->
-				
+<!-- 				<header class="entry-header page-header">
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+				</header>
+ -->				<!-- .entry-header -->
 				<div class="entry-content">
 					<?php the_content(); ?>
 					<?php endwhile; // end of the loop. ?>
@@ -27,19 +27,19 @@ get_header(); ?>
 						));
 					?>
 				</div><!-- .entry-content -->
-				<?php edit_post_link( __( 'Edit', 'upbootwp' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 	
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
+		<div class="bottom-stuff">			
 			<div class="col-md-4">
 				<p>Your Mom!</p>
-			</div><!-- .col-md-4 -->
+			</div>
 			<div class="col-md-4">
-				<p>Your Mom!</p>
-			</div><!-- .col-md-4 -->
+				<p>Your Mom 2!</p>
+			</div>
 			<div class="col-md-4">
-				<p>Your Mom!</p>
-			</div><!-- .col-md-4 -->
-
+				<p>Your Mom 3!</p>
+			</div>
+		</div>
 	</div><!-- .container -->
 <?php get_footer(); ?>

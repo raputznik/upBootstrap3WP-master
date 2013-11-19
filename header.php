@@ -27,8 +27,8 @@
 
 		<nav class="navbar navbar-default navbar-static-top" role="navigation">
 			<div class="myheader">
-							MY HEADER
-						</div>
+				<a href="index.php"><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/logo.png" title="palebluedot" /></a>
+			</div>
 			<div class="container">
 
 				<div class="row">
