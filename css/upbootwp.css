@@ -6015,10 +6015,12 @@ body {
 }
 h1 {
   font-weight: bold;
+  color: #c6e2fa;
 }
 h2 {
   font-size: 24px;
   margin-top: 0;
+  color: #29aae2;
 }
 .myheader {
   background-color: #273b4b;
