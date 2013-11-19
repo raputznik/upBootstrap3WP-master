@@ -39,8 +39,10 @@
 					            <span class="icon-bar"></span>
 					            <span class="icon-bar"></span>
 							</button>
+
+							<!-- Echoes name -->
 				            
-				            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><?php bloginfo( 'name' ); ?></a>
+				            <!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  class="navbar-brand"><?php bloginfo( 'name' ); ?></a> -->
 				            
 				        </div>
 						
