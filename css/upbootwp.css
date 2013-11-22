@@ -259,7 +259,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #ffffff;
@@ -394,7 +394,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -6011,7 +6011,7 @@ fieldset[disabled] #submit.active {
   border-color: #cccccc;
 }
 body {
-  background-color: #273b4b !important;
+  background-color: #141825 !important;
 }
 h1 {
   font-weight: bold;
@@ -6025,7 +6025,6 @@ h2 {
 }
 .myheader {
   background-color: #273b4b;
-  height: 178px;
   padding-top: 60px;
 }
 #main-menu {
@@ -6035,18 +6034,27 @@ h2 {
 }
 .content-wrapper {
   margin-top: -60px;
-  background-image: url('http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/home-bg1.jpg');
   background-color: #141825;
 }
 .entry-content {
-  padding: 30px 20px 20px 50%;
+  margin: 5%;
+}
+.circle2 {
+  float: left;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  background-color: #28aae1;
+  margin: 5%;
 }
 .bottom-stuff {
   position: relative;
   max-height: 370px;
 }
-.section p {
-  padding-left: 25%;
+.bottom-stuff h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
   margin-top: 20px;
 }
 .col-md-4 {
@@ -6057,6 +6065,4 @@ h2 {
   width: 150px;
   height: 150px;
   background-color: #28aae1;
-  margin-top: 20px;
-  margin-left: 25%;
 }

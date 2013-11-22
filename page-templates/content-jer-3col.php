@@ -19,6 +19,9 @@ get_header(); ?>
  -->				<!-- .entry-header -->
 <div class="content-wrapper">				
 	<div class="entry-content">
+		<div class="circle2">
+		</div>
+
 						<?php the_content(); ?>
 						<?php endwhile; // end of the loop. ?>
 						<?php
@@ -35,27 +38,27 @@ get_header(); ?>
 		<div class="bottom-stuff">			
 			<div class="col-md-4">
 				<div class="section">
-					<div class="circle1 puerto">
+					<div class="circle1">
 						
 					</div>
-					<p>Section 1</p>
+					<h3>Puerto<br>Vallarta</h3>
 				</div>
 			</div>
 			<div class="col-md-4 col-2">
 				<div class="section">				
-					<div class="circle1 puerto">
+					<div class="circle1">
 						
 					</div>
-					<p>Section 2</p>
+					<h3>Sherlock<br>Holmes</h3>
 				</div>
 			</div>
 				<div class="col-md-4 col-3">
 					<div class="section">				
-						<div class="circle1 puerto">
+						<div class="circle1">
 							
 						</div>
 
-					<p>Section 3</p>
+					<h3>Audio-<br>Technica</h3>
 				</div>
 			</div>
 		</div>
