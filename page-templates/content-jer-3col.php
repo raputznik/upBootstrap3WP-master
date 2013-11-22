@@ -17,28 +17,46 @@ get_header(); ?>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 				</header>
  -->				<!-- .entry-header -->
-				<div class="entry-content">
-					<?php the_content(); ?>
-					<?php endwhile; // end of the loop. ?>
-					<?php
-						wp_link_pages(array(
-							'before' => '<div class="page-links">'.__('Pages:', 'upbootwp'),
-							'after'  => '</div>',
-						));
-					?>
-				</div><!-- .entry-content -->
-	
+<div class="content-wrapper">				
+	<div class="entry-content">
+						<?php the_content(); ?>
+						<?php endwhile; // end of the loop. ?>
+						<?php
+							wp_link_pages(array(
+								'before' => '<div class="page-links">'.__('Pages:', 'upbootwp'),
+								'after'  => '</div>',
+							));
+						?>
+					</div><!-- .entry-content -->
+	</div>	
+<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
 		<div class="bottom-stuff">			
 			<div class="col-md-4">
-				<p>Your Mom!</p>
+				<div class="section">
+					<div class="circle1 puerto">
+						
+					</div>
+					<p>Section 1</p>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<p>Your Mom 2!</p>
+			<div class="col-md-4 col-2">
+				<div class="section">				
+					<div class="circle1 puerto">
+						
+					</div>
+					<p>Section 2</p>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<p>Your Mom 3!</p>
+				<div class="col-md-4 col-3">
+					<div class="section">				
+						<div class="circle1 puerto">
+							
+						</div>
+
+					<p>Section 3</p>
+				</div>
 			</div>
 		</div>
 	</div><!-- .container -->
