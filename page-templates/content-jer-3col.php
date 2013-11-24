@@ -17,10 +17,14 @@ get_header(); ?>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 				</header>
  -->				<!-- .entry-header -->
-<div class="content-wrapper">				
-	<div class="entry-content">
-		<div class="circle2">
+<div class="content-wrapper">	
+		<a href="">
+			<div class="circle2">
+			<img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/cir_suz_lg.png" alt="">
 		</div>
+		</a>
+
+	<div class="entry-content">
 
 						<?php the_content(); ?>
 						<?php endwhile; // end of the loop. ?>

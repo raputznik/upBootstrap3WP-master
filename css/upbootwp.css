@@ -6024,7 +6024,8 @@ h2 {
 }
 .myheader {
   background-color: #273b4b;
-  padding-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 .myheader a {
   padding-left: 20px;
@@ -6036,7 +6037,6 @@ h2 {
 }
 .content-wrapper {
   margin-top: -60px;
-  background-color: #141825;
 }
 .entry-content {
   margin: 5%;
@@ -6047,7 +6047,18 @@ h2 {
   width: 250px;
   height: 250px;
   background-color: #28aae1;
-  margin: 5%;
+  margin: 0 10% 5% 5%;
+}
+.circle2 img {
+  opacity: 0.5;
+  transition-duration: 0.3s;
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
+
+}
+.circle2 img:hover {
+  opacity: 1.0;
+  transition-duration: 0.3s;
 }
 .bottom-stuff {
   position: relative;
@@ -6062,9 +6073,16 @@ h2 {
 .col-md-4 {
   background-color: #446783;
 }
+.section {
+  padding-top: 50px;
+}
 .circle1 {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: #28aae1;
+  margin: 5% auto;
+}
+footer {
+  padding-top: 20px;
 }
