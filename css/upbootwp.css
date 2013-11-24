@@ -6051,7 +6051,7 @@ h2 {
 }
 .circle2 img {
   opacity: 0.5;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   filter: alpha(opacity=40);
   /* For IE8 and earlier */
 
@@ -6074,15 +6074,16 @@ h2 {
   background-color: #446783;
 }
 .section {
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #273b4b;
 }
 .circle1 {
+  text-align: center;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: #28aae1;
   margin: 5% auto;
-}
-footer {
-  padding-top: 20px;
+  padding-top: 8px;
 }

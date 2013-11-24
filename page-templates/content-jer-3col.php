@@ -42,16 +42,18 @@ get_header(); ?>
 		<div class="bottom-stuff">			
 			<div class="col-md-4">
 				<div class="section">
+					
 					<div class="circle1">
-						
+						<a href=""><img src="" alt=""></a>
 					</div>
+				
 					<h3>Puerto<br>Vallarta</h3>
 				</div>
 			</div>
 			<div class="col-md-4 col-2">
 				<div class="section">				
 					<div class="circle1">
-						
+			<a href=""><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/img_pue_sm.png" alt=""></a>
 					</div>
 					<h3>Sherlock<br>Holmes</h3>
 				</div>
