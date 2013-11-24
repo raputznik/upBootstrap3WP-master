@@ -61,6 +61,9 @@ get_header(); ?>
 				<div class="col-md-4 col-3">
 					<div class="section">				
 						<div class="circle1">
+							<div class="circle3">
+								
+							</div>
 							
 						</div>
 
