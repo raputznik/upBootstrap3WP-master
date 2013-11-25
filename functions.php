@@ -26,7 +26,7 @@ function upbootwp_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'Bootstrap WP Primary' ),

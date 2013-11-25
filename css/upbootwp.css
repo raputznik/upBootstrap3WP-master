@@ -6012,6 +6012,9 @@ fieldset[disabled] #submit.active {
 body {
   background-color: #141825 !important;
 }
+.container {
+  padding: 0;
+}
 h1 {
   font-weight: bold;
   color: #c6e2fa;
@@ -6028,6 +6031,11 @@ h2 {
 }
 .myheader a {
   padding-left: 20px;
+}
+.myheader img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 #main-menu {
   float: right;
@@ -6061,7 +6069,6 @@ h2 {
 }
 .bottom-stuff {
   position: relative;
-  max-height: 370px;
 }
 .bottom-stuff h3 {
   text-align: center;
