@@ -6025,7 +6025,6 @@ h2 {
 .myheader {
   background-color: #273b4b;
   padding-top: 30px;
-  padding-bottom: 20px;
 }
 .myheader a {
   padding-left: 20px;
@@ -6097,11 +6096,4 @@ h2 {
 .circle1 img:hover {
   opacity: 1.0;
   transition-duration: 0.3s;
-}
-.circle3 {
-  border-radius: 50%;
-  width: 143;
-  height: 143;
-  background-color: #273b4b;
-  margin: 0 auto;
 }
