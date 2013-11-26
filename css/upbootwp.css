@@ -6036,6 +6036,7 @@ h2 {
   display: block;
   height: auto;
   max-width: 100%;
+  padding-left: 20px;
 }
 #main-menu {
   float: right;
@@ -6046,26 +6047,27 @@ h2 {
   margin-top: -60px;
 }
 .entry-content {
+  padding-top: 10px;
   margin: 5%;
 }
-.circle2 {
+.wp-post-image {
   float: left;
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  background-color: #28aae1;
-  margin: 0 10% 5% 5%;
+  background-color: #30c0fe;
+  margin: 0 10% 5% 0;
 }
-.circle2 img {
-  opacity: 0.5;
+.wp-post-image {
+  opacity: 0.7;
   transition-duration: 0.2s;
   filter: alpha(opacity=40);
   /* For IE8 and earlier */
 
 }
-.circle2 img:hover {
+.wp-post-image:hover {
   opacity: 1.0;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 .bottom-stuff {
   position: relative;
@@ -6096,11 +6098,15 @@ h2 {
 .circle1 img {
   opacity: 0.5;
   transition-duration: 0.2s;
-  filter: alpha(opacity=40);
-  /* For IE8 and earlier */
-
 }
 .circle1 img:hover {
   opacity: 1.0;
   transition-duration: 0.3s;
+}
+.recent h2 {
+  padding-left: 35px;
+  color: #c6e2fa;
+}
+footer {
+  background-color: #273b4b;
 }

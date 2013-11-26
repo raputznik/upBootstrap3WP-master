@@ -86,6 +86,20 @@ function upbootwp_less() {
 // Enable this when you want to work with less
 //add_action('wp_head', 'upbootwp_less');
 
+	// add_action( 'init', 'create_post_type' );
+	// 	function create_post_type() {
+	// 	register_post_type( 'examples',
+	// 	array(
+	// 	'labels' => array(
+	// 	'name' => __( 'Examples' ),
+	// 	'singular_name' => __( 'Example' )
+	// 	),
+	// 	'public' => true,
+	// 	'has_archive' => true
+	// 	)
+	// 	);
+	// }
+
 
 
 /**
