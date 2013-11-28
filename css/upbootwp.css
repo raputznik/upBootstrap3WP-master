@@ -6011,6 +6011,7 @@ fieldset[disabled] #submit.active {
 }
 body {
   background-color: #141825 !important;
+  background-repeat: no-repeat;
 }
 .container {
   padding: 0;
@@ -6030,7 +6031,7 @@ h2 {
   padding-top: 30px;
 }
 .myheader a {
-  padding-left: 20px;
+  padding-left: 5%;
 }
 .myheader img {
   display: block;
@@ -6048,6 +6049,7 @@ h2 {
 }
 .entry-content {
   padding-top: 10px;
+  padding-bottom: 50px;
   margin: 5%;
 }
 .wp-post-image {

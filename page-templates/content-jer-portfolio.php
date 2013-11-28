@@ -11,13 +11,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="content-wrapper">	
-<!-- 						<a href="">
-							<div class="circle2">
-							<img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/cir_suz_lg.png" alt="">
-						</div>
-						</a>
- -->
+				<div class="content-wrapper">						
 					<div class="entry-content">
 							<?php 
 								if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -33,7 +27,9 @@ get_header(); ?>
 									'after'  => '</div>',
 								));
 							?>
+							<!-- <h2>Launch Project</h2> -->
 						</div><!-- .entry-content -->
+
 					</div>	
 				<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
