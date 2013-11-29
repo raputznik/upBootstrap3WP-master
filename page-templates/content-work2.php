@@ -1,38 +1,37 @@
 <?php
 /**
- * Template Name: Jer 3column-child
- * The template used for displaying page content in page.php
+ * Template Name: Content Work 2
  *
- * @author Matthias Thom | http://upplex.de
+ * @author Your Thom | http://upplex.de
  * @package upBootWP 0.1
  */
 get_header(); ?>
 
-<?php while (have_posts()) : the_post(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="content-wrapper">	
-					<div class="entry-content">
-							<?php 
-								if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-								  the_post_thumbnail();
-								} 
-							?>
+					<div class="entry-content work-1">
 
-							<?php the_content(); ?>
-							<?php endwhile; // end of the loop. ?>
-							<?php
-								wp_link_pages(array(
-									'before' => '<div class="page-links">'.__('Pages:', 'upbootwp'),
-									'after'  => '</div>',
-								));
-							?>
-						</div><!-- .entry-content -->
-					</div>	
-				<!-- End Content Wrapper -->
+						<?php 
+						$page_id = 97; // 123 should be replaced with a specific Page's id from your site, which you can find by mousing over the link to edit that Page on the Manage Pages admin page. The id will be embedded in the query string of the URL, e.g. page.php?action=edit&post=123.
+
+						$page_data = get_page( $page_id = 97 ); // You must pass in a variable to the get_page function. If you pass in a value (e.g. get_page ( 123 ); ), WordPress will generate an error. By default, this will return an object.
+
+						echo '<h3>'. $page_data->post_title .'</h3>';// echo the title
+
+						echo apply_filters('the_content', $page_data->post_content); // echo the content and retain WordPress filters such as paragraph tags.
+
+						?>
+
+					</div><!-- .entry-content -->
+				</div>	<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
+
 		</div><!-- .row -->
+
+
+
 		<div class="bottom-stuff">	
 					<div class="recent">
 							<a href=""><h2>New Coordinates:</h2></a>		
