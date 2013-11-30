@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Content Work 2
+ * Template Name: Content Work
  *
  * @author Your Thom | http://upplex.de
  * @package upBootWP 0.1
@@ -8,33 +8,77 @@
 get_header(); ?>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
+<!-- 			<div class="row">
+				<div class="col-md-12">
+					<div class="works-header"><h4>Selected Works</h4></div>
+				</div>
+			</div> -->
+ 		<div class="row toprow">
+			<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
-
-						<?php 
-						$page_id = 97; // 123 should be replaced with a specific Page's id from your site, which you can find by mousing over the link to edit that Page on the Manage Pages admin page. The id will be embedded in the query string of the URL, e.g. page.php?action=edit&post=123.
-
-						$page_data = get_page( $page_id = 97 ); // You must pass in a variable to the get_page function. If you pass in a value (e.g. get_page ( 123 ); ), WordPress will generate an error. By default, this will return an object.
-
-						echo '<h3>'. $page_data->post_title .'</h3>';// echo the title
-
-						echo apply_filters('the_content', $page_data->post_content); // echo the content and retain WordPress filters such as paragraph tags.
-
-						?>
-
-					</div><!-- .entry-content -->
+						<div class="death">
+						<?php $new_query_1 = new WP_Query();// Get title 
+							$new_query_1->query(array('page_id' => 97)); 
+							while ($new_query_1->have_posts()) :
+							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
+							the_content(); 
+							
+							endwhile; 
+							wp_reset_query(); 
+							?> 				
+					
+					</div>	<!-- .end death -->				
+				</div><!-- .entry-content -->
+				</div>	<!-- End Content Wrapper -->
+			</div><!-- .col-md-12 -->
+		<!-- <div class="divider1"></div> -->
+			<div class="col-md-4">
+				<div class="content-wrapper">	
+					<div class="entry-content work-1">
+						<div class="col2">
+						<?php $new_query_1 = new WP_Query();// Get title 
+							$new_query_1->query(array('page_id' => 106)); 
+							while ($new_query_1->have_posts()) :
+							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
+							the_content(); 
+							
+							endwhile; 
+							wp_reset_query(); 
+							?> 				
+					
+					</div>	<!-- .end death -->				
+				</div><!-- .entry-content -->
+				</div>	<!-- End Content Wrapper -->
+			</div><!-- .col-md-12 -->
+					<div class="col-md-4">
+				<div class="content-wrapper">	
+					<div class="entry-content work-1">
+						<div class="death">
+						<?php $new_query_1 = new WP_Query();// Get title 
+							$new_query_1->query(array('page_id' => 110)); 
+							while ($new_query_1->have_posts()) :
+							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
+							the_content(); 
+							
+							endwhile; 
+							wp_reset_query(); 
+							?> 				
+					
+					</div>	<!-- .end death -->				
+				</div><!-- .entry-content -->
 				</div>	<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
 
 		</div><!-- .row -->
 
-
+ 		<div class="row toprow-3">
+		</div><!-- .row -->
+		
 
 		<div class="bottom-stuff">	
 					<div class="recent">
-							<a href=""><h2>New Coordinates:</h2></a>		
+							<a href=""><h2>New Coordinates</h2></a>		
 							<div id="divider"></div>	
 					</div>						
 
