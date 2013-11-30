@@ -36,7 +36,7 @@ get_header(); ?>
 			<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
-						<div class="col2">
+						<div class="death">
 						<?php $new_query_1 = new WP_Query();// Get title 
 							$new_query_1->query(array('page_id' => 106)); 
 							while ($new_query_1->have_posts()) :
@@ -75,15 +75,16 @@ get_header(); ?>
  		<div class="row toprow-3">
 		</div><!-- .row -->
 		
+<!-- bottom stuff -->
 
 		<div class="bottom-stuff">	
-					<div class="recent">
+<!-- 					<div class="recent">
 							<a href=""><h2>New Coordinates</h2></a>		
 							<div id="divider"></div>	
 					</div>						
-
+ -->
 			<div class="col-md-4">
-				<div class="section">								
+				<div class="section bot2">								
 <!-- 					<div class="circle1">
 						<a href=""><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/img_pue_sm.png" alt=""></a>
 
@@ -99,7 +100,7 @@ get_header(); ?>
 					</div>
 					<h3>Sherlock<br>Holmes</h3>
  -->				</div><!-- end section -->
-				
+
 			</div>
 				<div class="col-md-4">
 					<div class="section">				

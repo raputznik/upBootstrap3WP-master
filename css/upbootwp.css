@@ -6088,7 +6088,6 @@ h2 {
 .section {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #273b4b;
 }
 .circle1 {
   text-align: center;
@@ -6120,17 +6119,22 @@ h2 {
   color: #c6e2fa;
   padding-top: 10px;
 }
+footer {
+  background-color: #446783;
+  height: 200px;
+}
 .featured1 {
   margin-left: 5%;
   margin-top: -3%;
   width: 150px;
   height: 150px;
 }
-.toprow {
-  overflow: hidden;
-}
 .death h1 {
   margin-bottom: 3%;
+  font-size: 20px;
+}
+.death {
+  padding: 10%;
 }
 .works-header h4 {
   font-size: 26px;
