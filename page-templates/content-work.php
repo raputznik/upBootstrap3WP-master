@@ -22,11 +22,12 @@ get_header(); ?>
 							$new_query_1->query(array('page_id' => 97)); 
 							while ($new_query_1->have_posts()) :
 							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
-							the_title(); 
+							the_title('<h1>');
 							
 							endwhile; 
 							wp_reset_query(); 
 							?> 				
+							<a href="<?php the_permalink(); ?>">permalink</a>
 					
 					</div>	<!-- .end death -->				
 				</div><!-- .entry-content -->
@@ -41,11 +42,12 @@ get_header(); ?>
 							$new_query_1->query(array('page_id' => 106)); 
 							while ($new_query_1->have_posts()) :
 							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
-							the_title(); 
+							the_title('<h1>');
 							
 							endwhile; 
 							wp_reset_query(); 
-							?> 				
+							?> 	
+							<a href="<?php the_permalink(); ?>">permalink</a>			
 					
 					</div>	<!-- .end death -->				
 				</div><!-- .entry-content -->
@@ -59,7 +61,7 @@ get_header(); ?>
 							$new_query_1->query(array('page_id' => 110)); 
 							while ($new_query_1->have_posts()) :
 							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
-							the_title(); 
+							the_title('<h1>');
 							
 							endwhile; 
 							wp_reset_query(); 
@@ -72,45 +74,8 @@ get_header(); ?>
 
 		</div><!-- .row -->
 
- 		<div class="row toprow-3">
-		</div><!-- .row -->
 		
 <!-- bottom stuff -->
 
-		<div class="bottom-stuff">	
-<!-- 					<div class="recent">
-							<a href=""><h2>New Coordinates</h2></a>		
-							<div id="divider"></div>	
-					</div>						
- -->
-			<div class="col-md-4">
-				<div class="section bot2">								
-<!-- 					<div class="circle1">
-						<a href=""><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/img_pue_sm.png" alt=""></a>
-
-					</div>
-					<h3>Puerto<br>Vallarta</h3>
- -->				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="section">	
-
-<!-- 					<div class="circle1">
-						<a href=""><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/img_sher_sm.png" alt=""></a>
-					</div>
-					<h3>Sherlock<br>Holmes</h3>
- -->				</div><!-- end section -->
-
-			</div>
-				<div class="col-md-4">
-					<div class="section">				
-<!-- 						<div class="circle1">
-							<a href=""><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/img_aud_sm.png" alt=""></a>
-						</div>
-
-					<h3>Audio-<br>Technica</h3>
- -->				</div>
-			</div>
-		</div>
 	</div><!-- .container -->
 <?php get_footer(); ?>

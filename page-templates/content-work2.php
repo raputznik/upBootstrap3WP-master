@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Content Work
+ * Template Name: Content Work 2
  *
  * @author Your Thom | http://upplex.de
  * @package upBootWP 0.1
@@ -8,25 +8,21 @@
 get_header(); ?>
 
 	<div class="container">
-<!-- 			<div class="row">
+			<div class="row">
 				<div class="col-md-12">
-					<div class="works-header"><h4>Selected Works</h4></div>
+					<div class="works-header"><h1>Selected Works</h1></div>
 				</div>
-			</div> -->
+			</div>
  		<div class="row toprow">
 			<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
 						<div class="death">
-						<?php $new_query_1 = new WP_Query();// Get title 
-							$new_query_1->query(array('page_id' => 97)); 
-							while ($new_query_1->have_posts()) :
-							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
-							the_content(); 
-							
-							endwhile; 
-							wp_reset_query(); 
-							?> 				
+							 
+							 <a href="#"><?php echo get_the_post_thumbnail('97', array('class' => 'featured1'));?> 
+
+						<?php $page_id = 97; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
+
 					
 					</div>	<!-- .end death -->				
 				</div><!-- .entry-content -->
@@ -36,16 +32,9 @@ get_header(); ?>
 			<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
-						<div class="col2">
-						<?php $new_query_1 = new WP_Query();// Get title 
-							$new_query_1->query(array('page_id' => 106)); 
-							while ($new_query_1->have_posts()) :
-							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
-							the_content(); 
-							
-							endwhile; 
-							wp_reset_query(); 
-							?> 				
+						<div class="death">
+							 <a href="#"><?php echo get_the_post_thumbnail('106', array('class' => 'featured1'));?> 
+						<?php $page_id = 106; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
 					
 					</div>	<!-- .end death -->				
 				</div><!-- .entry-content -->
@@ -55,15 +44,8 @@ get_header(); ?>
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
 						<div class="death">
-						<?php $new_query_1 = new WP_Query();// Get title 
-							$new_query_1->query(array('page_id' => 110)); 
-							while ($new_query_1->have_posts()) :
-							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
-							the_content(); 
-							
-							endwhile; 
-							wp_reset_query(); 
-							?> 				
+							 <a href="#"><?php echo get_the_post_thumbnail('110', array('class' => 'featured1'));?> 
+						<?php $page_id = 110; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
 					
 					</div>	<!-- .end death -->				
 				</div><!-- .entry-content -->

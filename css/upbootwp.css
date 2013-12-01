@@ -6030,9 +6030,7 @@ h2 {
   background-color: #273b4b;
   padding-top: 30px;
   padding-right: 5%;
-}
-.logo a {
-  padding-left: 5%;
+  padding-bottom: 3%;
 }
 .logo img {
   display: block;
@@ -6119,6 +6117,9 @@ h2 {
   color: #c6e2fa;
   padding-top: 10px;
 }
+.cscfForm {
+  max-width: 50%;
+}
 footer {
   background-color: #446783;
   height: 200px;
@@ -6129,12 +6130,26 @@ footer {
   width: 150px;
   height: 150px;
 }
-.death h1 {
-  margin-bottom: 3%;
-  font-size: 20px;
+.attachment-featured1 {
+  margin-left: 5%;
+  margin-top: -3%;
+  width: 150px;
+  height: 150px;
 }
 .death {
   padding: 10%;
+}
+.death a {
+  text-decoration: none;
+}
+.death h1:hover {
+  color: #f68e56;
+}
+.death h1,
+h3,
+h4 {
+  margin-bottom: 3%;
+  font-size: 20px;
 }
 .works-header h4 {
   font-size: 26px;
