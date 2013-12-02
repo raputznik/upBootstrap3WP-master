@@ -8,38 +8,78 @@
 get_header(); ?>
 
 	<div class="container">
+
 			<div class="row">
 				<div class="col-md-12">
 					<div class="works-header"><h1>Selected Works</h1></div>
 				</div>
 			</div>
- 		<div class="row toprow">
+ 		<div class="row toprow" id="myAccordion">
 			<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
 						<div class="death">
-							 
-							 <a href="#"><?php echo get_the_post_thumbnail('97', array('class' => 'featured1'));?> 
+							 <a href="#collapseOne" data-parent="#myAccordion" data-toggle="collapse" class="accordion-toggle"><?php echo get_the_post_thumbnail('97', array('class' => 'featured1'));
+							 ?> 
 
-						<?php $page_id = 97; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
+							<?php $page_id = 97; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
 
-					
 					</div>	<!-- .end death -->				
 				</div><!-- .entry-content -->
 				</div>	<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
-		<!-- <div class="divider1"></div> -->
-			<div class="col-md-4">
+
+
+		<!-- THIS IS THE FIRST COLLAPSE ITEM -->
+			<div class="col-md-8">
+				<div class="toggle1 collapse" id="collapseOne">
+					
+					<?php $new_query_1 = new WP_Query();// Get title 
+						$new_query_1->query(array('page_id' => 97)); 
+						while ($new_query_1->have_posts()) :
+						$new_query_1->the_post(); 
+						the_content(); 
+						
+						endwhile; 
+						wp_reset_query(); 
+						?> 				
+				</div>
+			</div>	
+
+			<!-- END 1st COLLAPSE ITEM -->
+	
+
+			<div class="col-md-4" id="myAccordion2">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
 						<div class="death">
-							 <a href="#"><?php echo get_the_post_thumbnail('106', array('class' => 'featured1'));?> 
+							 <a href="#collapseTwo" data-parent="#myAccordion" data-toggle="collapse" class="accordion-toggle"><?php echo get_the_post_thumbnail('106', array('class' => 'featured1'));?> 
 						<?php $page_id = 106; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
 					
 					</div>	<!-- .end death -->				
 				</div><!-- .entry-content -->
 				</div>	<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
+
+		<!-- THIS IS THE SECOND COLLAPSE ITEM -->
+
+			<div class="col-md-12">
+				<div class="toggle2 collapse" id="collapseTwo">
+					
+					<?php $new_query_1 = new WP_Query();// Get title 
+						$new_query_1->query(array('page_id' => 106)); 
+						while ($new_query_1->have_posts()) :
+						$new_query_1->the_post();  
+						the_content(); 
+						
+						endwhile; 
+						wp_reset_query(); 
+						?> 				
+				</div>
+			</div>	
+			
+			<!-- END 2nd COLLAPSE ITEM -->
+
 					<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
@@ -56,9 +96,18 @@ get_header(); ?>
 
  		<div class="row toprow-3">
 		</div><!-- .row -->
-		
 
-		<div class="bottom-stuff">	
+<!-- BOTTOM CONTENT -->
+		<div class="row row1">
+			<div class="col-md-12">			
+				<div class="content-wrapper">	
+					<div class="entry-content">
+				</div><!-- .entry-content -->
+				</div>	<!-- End Content Wrapper -->
+			</div><!-- .col-md-12 -->
+		</div><!-- .row -->
+
+<!-- 		<div class="bottom-stuff">	
 					<div class="recent">
 							<a href=""><h2>New Coordinates</h2></a>		
 							<div id="divider"></div>	
@@ -92,5 +141,5 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-	</div><!-- .container -->
+ -->	</div><!-- .container -->
 <?php get_footer(); ?>

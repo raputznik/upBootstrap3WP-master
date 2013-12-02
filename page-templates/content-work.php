@@ -56,9 +56,8 @@ get_header(); ?>
 					<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
-						<div class="death">
 						<?php $new_query_1 = new WP_Query();// Get title 
-							$new_query_1->query(array('page_id' => 110)); 
+							$new_query_1->query(array('page_id' => 97)); 
 							while ($new_query_1->have_posts()) :
 							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
 							the_title('<h1>');
@@ -67,7 +66,6 @@ get_header(); ?>
 							wp_reset_query(); 
 							?> 				
 					
-					</div>	<!-- .end death -->				
 				</div><!-- .entry-content -->
 				</div>	<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->

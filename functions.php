@@ -64,13 +64,19 @@ function upbootwp_widgets_init() {
 	));
 }
 add_action( 'widgets_init', 'upbootwp_widgets_init' );
-
+	
 function upbootwp_scripts() {
 	wp_enqueue_style( 'upbootwp-css', get_template_directory_uri().'/css/upbootwp.css', array(), '20130908');
 	wp_enqueue_script( 'upbootwp-jQuery', get_template_directory_uri().'/js/jquery.js',array(),'2.0.3',true);
 	wp_enqueue_script( 'upbootwp-basefile', get_template_directory_uri().'/js/bootstrap.min.js',array(),'20130905',true);
 }
 add_action( 'wp_enqueue_scripts', 'upbootwp_scripts' );
+
+// function add_my_script() {
+// wp_enqueue_script(
+//     'jer-script', get_template_directory_uri() . '/js/script.js', array('jquery') 
+// );
+// }
 
 
 /**
