@@ -14,6 +14,24 @@ get_header(); ?>
 					<div class="works-header"><h1>Selected Works</h1></div>
 				</div>
 			</div>
+		<!-- THIS IS THE SECOND COLLAPSE ITEM -->
+
+			<div class="col-md-12">
+				<div class="toggle2 collapse" id="collapseTwo">
+					
+					<?php $new_query_1 = new WP_Query();// Get title 
+						$new_query_1->query(array('page_id' => 106)); 
+						while ($new_query_1->have_posts()) :
+						$new_query_1->the_post();  
+						the_content(); 
+						
+						endwhile; 
+						wp_reset_query(); 
+						?> 				
+				</div>
+			</div>	
+			
+			<!-- END 2nd COLLAPSE ITEM -->
  		<div class="row toprow" id="myAccordion">
 			<div class="col-md-4">
 				<div class="content-wrapper">	
@@ -49,6 +67,8 @@ get_header(); ?>
 			<!-- END 1st COLLAPSE ITEM -->
 	
 
+
+
 			<div class="col-md-4" id="myAccordion2">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
@@ -61,24 +81,7 @@ get_header(); ?>
 				</div>	<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
 
-		<!-- THIS IS THE SECOND COLLAPSE ITEM -->
 
-			<div class="col-md-12">
-				<div class="toggle2 collapse" id="collapseTwo">
-					
-					<?php $new_query_1 = new WP_Query();// Get title 
-						$new_query_1->query(array('page_id' => 106)); 
-						while ($new_query_1->have_posts()) :
-						$new_query_1->the_post();  
-						the_content(); 
-						
-						endwhile; 
-						wp_reset_query(); 
-						?> 				
-				</div>
-			</div>	
-			
-			<!-- END 2nd COLLAPSE ITEM -->
 
 					<div class="col-md-4">
 				<div class="content-wrapper">	
