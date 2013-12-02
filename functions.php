@@ -148,6 +148,9 @@ require get_template_directory().'/inc/jetpack.php';
  * @access public
  * @return void
  */
+
+
+
 function upbootwp_breadcrumbs() {
 
 	$delimiter = '&raquo;';

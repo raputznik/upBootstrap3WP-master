@@ -5955,7 +5955,6 @@ fieldset[disabled] #submit.active {
 }
 body {
   background-color: #141825 !important;
-  background-repeat: no-repeat;
 }
 .container {
   padding: 0;
@@ -5990,6 +5989,10 @@ h2 {
 #content {
   padding-top: 0;
 }
+#header-row {
+  background-image: url('http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/home-bg2.jpg');
+  background-repeat: no-repeat;
+}
 .entry-content {
   padding-top: 10px;
   margin: 5%;
@@ -5998,10 +6001,8 @@ h2 {
   float: left;
   padding: 6px;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
   background-color: #30c0fe;
-  margin: 0 10% 5% 5%;
+  margin: 0 5% 5% 0%;
 }
 .wp-post-image {
   opacity: 0.7;
@@ -6032,8 +6033,6 @@ h2 {
 .circle1 {
   text-align: center;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
   background-color: #28aae1;
   margin: 5% auto;
   padding-top: 8px;
@@ -6056,42 +6055,54 @@ h2 {
   padding-left: 4%;
   margin-bottom: 0px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #c6e2fa;
   padding-top: 10px;
+}
+.attachment-featured2 {
+  width: 234px;
+  height: 234px;
+}
+.featured3 wp-post-image {
+  margin-top: 5%;
+}
+.about-1 {
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+.about-2 {
+  max-width: 500px;
+  padding-top: 2%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+.about-2 h1 {
+  font-size: 26px;
 }
 .cscfForm {
   max-width: 50%;
 }
-footer {
-  background-color: #446783;
-  height: 200px;
-}
-.featured1 {
-  margin-left: 5%;
-  margin-top: -3%;
-  width: 150px;
-  height: 150px;
-}
 .attachment-featured1 {
   margin-left: 5%;
   margin-top: -3%;
-  width: 150px;
-  height: 150px;
 }
 .death {
-  padding: 10%;
+  padding-top: 7%;
+  margin: 0;
 }
 .death a {
   text-decoration: none;
 }
+.death h1 {
+  padding-left: 5%;
+  color: #c6e2fa;
+  font-size: 26px;
+}
 .death h1:hover {
   color: #f68e56;
-}
-.death h1,
-h3,
-h4 {
-  margin-bottom: 3%;
-  font-size: 20px;
 }
 .works-header h1 {
   padding-left: 4%;
@@ -6105,18 +6116,29 @@ h4 {
   text-transform: uppercase;
   color: #c6e2fa;
   padding-left: 4%;
-  margin-top: -5%;
 }
 .toggle1 {
-  max-width: 500px;
-  padding-top: 4%;
+  display: inline-block;
+  max-width: 600px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.toggle2 {
-  max-width: 500px;
+.toggle1 p {
+  margin-top: 5%;
 }
 .toggle1 img {
-  border: 4px solid #446783;
+  border: 4px solid #278cba;
+  border-radius: 4%;
 }
 .toggle1 img:hover {
   border: 4px solid #30c0fe;
+}
+#myAccordion,
+#myAccordion3 {
+  background-color: #446783;
+}
+#myAccordion,
+#myAccordion2,
+#myAccordion3 {
+  padding-bottom: 3%;
 }

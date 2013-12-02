@@ -17,7 +17,7 @@ get_header(); ?>
 			<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
-						<div class="death">
+						<div class="main-content">
 						<?php $new_query_1 = new WP_Query();// Get title 
 							$new_query_1->query(array('page_id' => 97)); 
 							while ($new_query_1->have_posts()) :
@@ -29,7 +29,7 @@ get_header(); ?>
 							?> 				
 							<a href="<?php the_permalink(); ?>">permalink</a>
 					
-					</div>	<!-- .end death -->				
+					</div>	<!-- .end main-content -->				
 				</div><!-- .entry-content -->
 				</div>	<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
@@ -37,7 +37,7 @@ get_header(); ?>
 			<div class="col-md-4">
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
-						<div class="death">
+						<div class="main-content">
 						<?php $new_query_1 = new WP_Query();// Get title 
 							$new_query_1->query(array('page_id' => 106)); 
 							while ($new_query_1->have_posts()) :
@@ -49,7 +49,7 @@ get_header(); ?>
 							?> 	
 							<a href="<?php the_permalink(); ?>">permalink</a>			
 					
-					</div>	<!-- .end death -->				
+					</div>	<!-- .end main-content -->				
 				</div><!-- .entry-content -->
 				</div>	<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->

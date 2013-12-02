@@ -1996,18 +1996,6 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     })
   })
 
-  // CUSTOM JEREMY STUFF
-
-// $('#collapseOne').collapse({
-//   toggle: true
-// })
-
-// $('#death a').click(function(e) {
-//     $(this).hide();
-//     e.preventDefault(); //to prevent scrolling
-// });
-
-
 }(window.jQuery);
 
 
