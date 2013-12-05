@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
 				<div class="col-md-12">
 					<div class="works-header"><h1>Selected Works</h1></div>
 				</div>
-			</div>
+			</div> <!-- end row -->
 
  		<div class="row toprow">
 			<div class="col-md-12" id="myAccordion">
@@ -105,7 +105,6 @@ jQuery(document).ready(function(){
 			</div><!-- .col-md-12 -->
 
 		</div><!-- .row -->
-
 
 
 <!-- BOTTOM CONTENT -->

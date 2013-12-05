@@ -5989,15 +5989,13 @@ h2 {
 #content {
   padding-top: 0;
 }
-#header-row {
-  background-image: url('http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/home-bg2.jpg');
-  background-repeat: no-repeat;
-}
 .entry-content {
   padding-top: 10px;
+  padding-bottom: 50px;
   margin: 5%;
 }
 .wp-post-image {
+  display: block;
   float: left;
   padding: 6px;
   border-radius: 50%;
@@ -6049,7 +6047,6 @@ h2 {
   background-color: #273b4b;
   width: 100%;
   height: 40px;
-  position: relative;
 }
 .recent h2 {
   padding-left: 4%;
@@ -6082,11 +6079,34 @@ h2 {
 .about-2 h1 {
   font-size: 26px;
 }
+.contact-form {
+  padding: 5%;
+}
+.contact-form h2 {
+  padding-bottom: 0;
+  max-width: 300px;
+  color: #c6e2fa;
+  line-height: 1.3em;
+}
+.contact-form h1 {
+  color: #29aae2;
+  text-transform: uppercase;
+}
 .cscfForm {
   max-width: 50%;
 }
+#collapseOne,
+#collapseTwo,
+#collapseThree {
+  float: right;
+  margin-right: 30%;
+}
+footer {
+  display: none;
+  min-height: 100px;
+  margin-top: 5%;
+}
 .attachment-featured1 {
-  margin-left: 5%;
   margin-top: -3%;
 }
 .death {
@@ -6099,7 +6119,6 @@ h2 {
 .death h1 {
   padding-left: 5%;
   color: #c6e2fa;
-  font-size: 26px;
 }
 .death h1:hover {
   color: #f68e56;
@@ -6118,27 +6137,38 @@ h2 {
   padding-left: 4%;
 }
 .toggle1 {
-  display: inline-block;
+  max-width: 550px;
+  padding-right: 5%;
+}
+.accordion-toggle collapsed {
   max-width: 600px;
-  padding-left: 5%;
   padding-right: 5%;
 }
 .toggle1 p {
   margin-top: 5%;
 }
-.toggle1 img {
-  border: 4px solid #278cba;
-  border-radius: 4%;
-}
 .toggle1 img:hover {
   border: 4px solid #30c0fe;
 }
-#myAccordion,
-#myAccordion3 {
-  background-color: #446783;
+.toggle1 h2 {
+  padding-top: 1em;
+  font-size: 24px;
+}
+.toggle1 h3 {
+  padding-bottom: 1em;
+}
+.toggle1 a {
+  color: #c6e2fa;
+}
+.toggle1 a:hover {
+  color: #c6e2fa;
 }
 #myAccordion,
 #myAccordion2,
 #myAccordion3 {
   padding-bottom: 3%;
+}
+.wp-caption-text {
+  font-style: italic;
+  color: #c6e2fa;
 }

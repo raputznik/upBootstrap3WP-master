@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Jer 3column-child
+ * Template Name: Content Home
  * The template used for displaying page content in page.php
  *
  * @author Matthias Thom | http://upplex.de
@@ -14,11 +14,12 @@ get_header(); ?>
 			<div class="col-md-12">
 				<div class="content-wrapper">	
 					<div class="entry-content">
-							<?php 
+							<a href="#selected"><?php 
 								if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 								  the_post_thumbnail();
 								} 
 							?>
+							</a>
 
 							<?php the_content(); ?>
 							<?php endwhile; // end of the loop. ?>
@@ -95,14 +96,14 @@ get_header(); ?>
  		<div class="row second-row">
 			<div class="col-md-12" id="myAccordion2">
 						<div class="death">
-							 <a href="#collapseTwo" data-parent="#myAccordion2" data-toggle="collapse" class="accordion-toggle secondlink"><?php echo get_the_post_thumbnail('106', array('class' => 'featured1'));?> 
-						<?php $page_id = 106; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
+							 <a href="#collapseTwo" data-parent="#myAccordion2" data-toggle="collapse" class="accordion-toggle secondlink"><?php echo get_the_post_thumbnail('110', array('class' => 'featured1'));?> 
+						<?php $page_id = 110; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
 					
 					</div>	<!-- .end death -->	
 					<div class="toggle1 collapse" id="collapseTwo">
 						
 						<?php $new_query_1 = new WP_Query();// Get title 
-							$new_query_1->query(array('page_id' => 106)); 
+							$new_query_1->query(array('page_id' => 110)); 
 							while ($new_query_1->have_posts()) :
 							$new_query_1->the_post(); 
 							the_content(); 
@@ -118,14 +119,14 @@ get_header(); ?>
  		<div class="row third-row">
 					<div class="col-md-12" id="myAccordion3">
 						<div class="death">
-							 <a href="#collapseThree" data-parent="#myAccordion3" data-toggle="collapse" class="accordion-toggle secondlink"><?php echo get_the_post_thumbnail('110', array('class' => 'featured1'));?> 
-						<?php $page_id = 110; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
+							 <a href="#collapseThree" data-parent="#myAccordion3" data-toggle="collapse" class="accordion-toggle secondlink"><?php echo get_the_post_thumbnail('106', array('class' => 'featured1'));?> 
+						<?php $page_id = 106; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
 					
 					</div>	<!-- .end death -->			
 					<div class="toggle1 collapse" id="collapseThree">
 						
 						<?php $new_query_1 = new WP_Query();// Get title 
-							$new_query_1->query(array('page_id' => 110)); 
+							$new_query_1->query(array('page_id' => 106)); 
 							while ($new_query_1->have_posts()) :
 							$new_query_1->the_post(); 
 							the_content(); 
@@ -140,20 +141,23 @@ get_header(); ?>
 		</div><!-- .row -->
 			<div class="row">
 				<div class="col-md-12">
-					<div class="recent contact-header">
-						<h1>Contact</h1>
-					
-							<?php 
+					<div class="recent contact-header" id="contact-header">
+						<h2>Contact</h2>
+					</div>	
+					<div class="contact-form">	
+						<h2>Interesting in working with me? I'd love to hear from you. Please fill in the form below.</h2>
+						<?php 
 								// $args = array( 'page_id' => '1' );
 								$loop = new WP_Query( 'page_id=11' );
 								while ( $loop->have_posts() ) : $loop->the_post();
 									global $more;
 									$more = 0;
-									the_title('<h2>','</h2>');
+									the_title('<h1>','</h1>');
 									the_content( __( '<br/>Read more...' ) );
 								endwhile;
 							?>	
-					</div>									
+					</div>
+													
 				</div>
 			</div> 
 	</div><!-- .container -->

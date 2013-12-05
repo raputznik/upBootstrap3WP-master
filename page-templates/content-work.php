@@ -18,17 +18,16 @@ get_header(); ?>
 				<div class="content-wrapper">	
 					<div class="entry-content work-1">
 						<div class="main-content">
-						<?php $new_query_1 = new WP_Query();// Get title 
-							$new_query_1->query(array('page_id' => 97)); 
-							while ($new_query_1->have_posts()) :
-							$new_query_1->the_post(); the_post_thumbnail('large', array('class' => 'featured1'));
-							the_title('<h1>');
-							
-							endwhile; 
-							wp_reset_query(); 
-							?> 				
-							<a href="<?php the_permalink(); ?>">permalink</a>
-					
+							<?php 
+								// $args = array( 'page_id' => '1' );
+								$loop = new WP_Query( 'page_id=110' );
+								while ( $loop->have_posts() ) : $loop->the_post();
+									global $more;
+									$more = 0;
+									the_title('<h2>','</h2>');
+									the_content( __( '<br/>Read more...' ) );
+								endwhile;
+							?>					
 					</div>	<!-- .end main-content -->				
 				</div><!-- .entry-content -->
 				</div>	<!-- End Content Wrapper -->

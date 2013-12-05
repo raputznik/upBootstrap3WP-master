@@ -33,39 +33,5 @@ get_header(); ?>
 				<!-- End Content Wrapper -->
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
-		<div class="bottom-stuff">	
-					<div class="recent">
-							<a href=""><h2>New Coordinates</h2></a>		
-							<div id="divider"></div>	
-					</div>						
-
-			<div class="col-md-4 bottom-content">
-				<div class="section">								
-					<div class="circle1">
-						<a href=""><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/img_pue_sm.png" alt=""></a>
-
-					</div>
-					<h3>Puerto<br>Vallarta</h3>
-				</div>
-			</div>
-			<div class="col-md-4 bottom-content">
-				<div class="section">	
-
-					<div class="circle1">
-						<a href=""><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/img_sher_sm.png" alt=""></a>
-					</div>
-					<h3>Sherlock<br>Holmes</h3>
-				</div>
-			</div>
-				<div class="col-md-4 bottom-content">
-					<div class="section">				
-						<div class="circle1">
-							<a href=""><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/img_aud_sm.png" alt=""></a>
-						</div>
-
-					<h3>Audio-<br>Technica</h3>
-				</div>
-			</div>
-		</div>
 	</div><!-- .container -->
 <?php get_footer(); ?>
