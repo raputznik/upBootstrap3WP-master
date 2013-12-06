@@ -13,7 +13,7 @@ get_header(); ?>
 		<div class="row" id="header-row">
 			<div class="col-md-12">
 				<div class="content-wrapper">	
-					<div class="entry-content">
+					<div class="entry-content">							
 							<a href="#selected"><?php 
 								if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 								  the_post_thumbnail();
@@ -21,7 +21,7 @@ get_header(); ?>
 							?>
 							</a>
 
-							<?php the_content(); ?>
+							<div class="quote"><?php the_content(); ?></div>
 							<?php endwhile; // end of the loop. ?>
 							<?php
 								wp_link_pages(array(
@@ -88,7 +88,7 @@ get_header(); ?>
 							wp_reset_query(); 
 							?> 				
 					</div>
-			
+		<div class="divider1"></div>
 			</div><!-- .col-md-12 -->
 		</div><!-- .row -->
 
@@ -120,13 +120,13 @@ get_header(); ?>
 					<div class="col-md-12" id="myAccordion3">
 						<div class="death">
 							 <a href="#collapseThree" data-parent="#myAccordion3" data-toggle="collapse" class="accordion-toggle secondlink"><?php echo get_the_post_thumbnail('106', array('class' => 'featured1'));?> 
-						<?php $page_id = 106; $page_data = get_page( $page_id ); echo '<h1>'. $page_data->post_title .'</h1>';?></a>
+						<?php $post_id = 46; $post_data = get_page( $post_id ); echo '<h1>'. $post_data->post_title .'</h1>';?></a>
 					
 					</div>	<!-- .end death -->			
 					<div class="toggle1 collapse" id="collapseThree">
 						
 						<?php $new_query_1 = new WP_Query();// Get title 
-							$new_query_1->query(array('page_id' => 106)); 
+							$new_query_1->query(array('post_id' => 46)); 
 							while ($new_query_1->have_posts()) :
 							$new_query_1->the_post(); 
 							the_content(); 
@@ -145,15 +145,16 @@ get_header(); ?>
 						<h2>Contact</h2>
 					</div>	
 					<div class="contact-form">	
-						<h2>Interesting in working with me? I'd love to hear from you. Please fill in the form below.</h2>
+						<h1>Interested in working with me? </h1>
+						<h2>I'd love to hear from you. Please contact me!</h2>
 						<?php 
 								// $args = array( 'page_id' => '1' );
 								$loop = new WP_Query( 'page_id=11' );
 								while ( $loop->have_posts() ) : $loop->the_post();
 									global $more;
 									$more = 0;
-									the_title('<h1>','</h1>');
-									the_content( __( '<br/>Read more...' ) );
+									// the_title('<h1>','</h1>');
+									the_content( __( '<br/>Read more...', 'upBootWP-JerMod' ) );
 								endwhile;
 							?>	
 					</div>

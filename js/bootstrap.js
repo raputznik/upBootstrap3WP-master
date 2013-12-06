@@ -1978,7 +1978,6 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     return this
   }
 
-
   // AFFIX DATA-API
   // ==============
 

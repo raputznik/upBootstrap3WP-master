@@ -4,7 +4,7 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @author Matthias Thom | http://upplex.de
+ * @author Jeremy Dahl | palebluedot.ca
  * @package upBootWP 0.1
  */
 ?>
@@ -18,7 +18,7 @@
 						<?php do_action( 'upbootwp_credits' ); ?>
 						&copy; <?php bloginfo('name'); ?> <?php the_time('Y') ?>
 						<span class="sep"> | </span>
-						<?php printf(__('Design: %1$s by %2$s.', 'upbootwp' ), 'Jeremy Dahl', '<a href="http://upplex.de" rel="designer">palebluedot</a>'); ?>
+						<?php printf(__('Designed by: %1$s by %2$s.', 'upbootwp' ), 'Jeremy Dahl', '<a href="http://palebluedot.ca" rel="designer">palebluedot</a>'); ?>
 					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
 			</div><!-- .col-md-12 -->

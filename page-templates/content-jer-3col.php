@@ -10,17 +10,18 @@ get_header(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
 	<div class="container">
-		<div class="row" id="header-row">
+		<div class="row">
 			<div class="col-md-12">
 				<div class="content-wrapper">	
-					<div class="entry-content">
+					<div class="entry-content yourmom">
+							<?php the_title('<h1>','</h1>');?>
 							<?php 
 								if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 								  the_post_thumbnail();
 								} 
 							?>
 
-							<?php the_content(); ?>
+							<?php the_content();?>
 							<?php endwhile; // end of the loop. ?>
 							<?php
 								wp_link_pages(array(

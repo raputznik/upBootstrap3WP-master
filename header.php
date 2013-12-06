@@ -15,6 +15,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 
 <?php wp_head(); ?>
 <script type="text/javascript" src="//use.typekit.net/kzp3sgj.js"></script>
@@ -27,7 +28,7 @@
 	<header id="masthead" class="site-header container" role="banner">
 
 
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="logo">
 				<a href="index.php"><img src="http://palebluedot.ca/dev/portfolio/wp-content/themes/upBootstrap3WP-master/img/logo.png" title="palebluedot" /></a>
 			</div>
