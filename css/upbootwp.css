@@ -5956,11 +5956,6 @@ fieldset[disabled] #submit.active {
 body {
   background-color: #141825 !important;
   padding-top: 196px;
-  background: url('http://palebluedot.ca/wp-content/themes/upBootstrap3WP-master/img/home-bg2.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 .container {
   padding: 0;

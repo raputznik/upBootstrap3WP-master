@@ -72,11 +72,11 @@ function upbootwp_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'upbootwp_scripts' );
 
-// function add_my_script() {
-// wp_enqueue_script(
-//     'jer-script', get_template_directory_uri() . '/js/script.js', array('jquery') 
-// );
-// }
+function add_my_script() {
+wp_enqueue_script(
+    'jer-script', get_template_directory_uri() . '/js/script.js', array('jquery') 
+);
+}
 
 
 /**
